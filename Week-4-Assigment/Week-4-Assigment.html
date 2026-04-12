@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        let name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+        let city = prompt("What city do you live in?");
+        let profession = prompt("What is your profession?");
+        alert("Let's add two numbers together!");
+
+        let num1 = prompt("What is your first number?");
+        let num2 = prompt("What is your second number?");
+
+        let total = parseInt(num1) + parseInt(num2);
+        
+        alert("The numbers added together are: " + total);
+
+        let CatName = prompt("What is your cat's name?");
+
+        CatName = "Nico";
+
+        console.log("The current Cat Name is " + CatName + ".");
+
+        CatName = "Luna";
+
+        console.log("Now it is " + CatName + ".");
+
+        CatName = "Saki";
+
+        console.log("It has changed again to: " + CatName);
+    </script>
+
+</head>
+<body>
+    <h1>User Information</h1>
+    <div id="display-area">
+
+    <script >
+        document.getElementById("display-area").innerHTML = `
+            <p>Name: ${name}</p>
+            <p>Age: ${age}</p>
+            <p>City: ${city}</p>
+            <p>Profession: ${profession}</p>
+            <p>Cat's Name: ${CatName}</p>
+
+            <p>Your Math Total!: ${total}</p>
+        `;
+    </script>
+</div>  
+ <div id="footer">
+        <p>Created for VICO 3420 &mdash; Copyright 2026, Golya</p>
+    </div>
+</body>
+
+</html>
