@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+<h1>Week 5 Assignment</h1>
+<p>Click the button to answer some questions!</p>
+ 
+<button onclick="runQuiz()">Click Me!</button>
+ 
+<div id="output"></div>
+ 
+<script>
+    function runQuiz() {
+ 
+        var name = prompt("What is your name?");
+        var age = prompt("How old are you?");
+        var color = prompt("What is your favorite color?");
+ 
+        var result = "";
+ 
+        if (name == "London") {
+            result += "<p>Hey, Thats My name!</p>";
+        } else {
+            result += "<p>Nice to meet you, " + name + "!</p>";
+        }
+ 
+
+        if (age >= 18) {
+            result += "<p>You are old enough to vote.</p>";
+        } else {
+            result += "<p>You are not old enough to vote yet.</p>";
+        }
+ 
+
+        if (age < 13) {
+            result += "<p>You are a kid.</p>";
+        } else if (age < 18) {
+            result += "<p>You are a teenager.</p>";
+        } else if (age < 65) {
+            result += "<p>You are an adult.</p>";
+        } else {
+            result += "<p>You are a senior citizen.</p>";
+        }
+ 
+
+        switch (color) {
+            case "red":
+                result += "<p>Red is a bold color!</p>";
+                break;
+            case "blue":
+                result += "<p>Blue is very calming.</p>";
+                break;
+            case "green":
+                result += "<p>Green is the color of nature!</p>";
+                break;
+            default:
+                result += "<p>" + color + " is a cool color.</p>";
+        }
+ 
+        document.getElementById("output").innerHTML = result;
+    }
+</script>
+
+ </div>  
+ <div id="footer">
+        <p>Created for VICO 3420 &mdash; Copyright 2026, Golya</p>
+    </div>
+
+</body>
+</html>
