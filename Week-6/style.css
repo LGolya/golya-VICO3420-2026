@@ -1,0 +1,120 @@
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      font-family: Georgia, serif;
+      background: #f5f0eb;
+      color: #2c2a26;
+    }
+ 
+    /* ── Navigation menu ── */
+    nav {
+      background: #2c2a26;
+      padding: 0 2rem;
+      display: flex;
+      gap: 0;
+    }
+ 
+    nav a {
+      display: block;
+      color: #f5f0eb;
+      text-decoration: none;
+      padding: 1rem 1.25rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+ 
+    nav a:hover {
+      background: #444;
+      border-bottom-color: #c8a96e;
+    }
+ 
+    /* ── Page sections ── */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+ 
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      border: 1px solid #ddd8d0;
+    }
+ 
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      color: #2c2a26;
+      letter-spacing: -0.02em;
+    }
+ 
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #5a4a35;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+    }
+ 
+    #sorted-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+ 
+    #sorted-list li {
+      background: #f5f0eb;
+      border: 1px solid #ddd8d0;
+      border-radius: 20px;
+      padding: 0.35rem 1rem;
+      font-size: 0.95rem;
+      color: #3a3028;
+    }
+ 
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+ 
+    #gallery a {
+      display: block;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid #ddd8d0;
+      transition: transform 0.2s;
+    }
+ 
+    #gallery a:hover { transform: scale(1.03); }
+ 
+    #gallery img {
+      width: 180px;
+      height: 130px;
+      object-fit: cover;
+      display: block;
+    }
+ 
+    header {
+      background: #2c2a26;
+      color: #f5f0eb;
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+    }
+ 
+    header p {
+      color: #c8a96e;
+      margin-top: 0.4rem;
+      font-style: italic;
+      font-size: 50px;
+    }

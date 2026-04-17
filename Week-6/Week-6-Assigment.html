@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrays & Loops</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<header>
+  <h1>Arrays &amp; Loops</h1>
+  <p>Baseball, Names, and Cats!</p>
+</header>
+ 
+<!-- Navigation menu will be built here -->
+<nav id="nav-menu"></nav>
+ 
+<main>
+
+  <section id="section-list">
+    <h2>Sorted Name List</h2>
+    <ul id="sorted-list"></ul>
+  </section>
+ 
+
+  <section id="section-gallery">
+    <h2>Cat Gallery, click a thumbnail to view full size</h2>
+    <div id="gallery"></div>
+  </section>
+ 
+</main>
+ 
+<script>
+
+  let names = [
+    "London",
+    "Kyle",
+    "Anne",
+    "Jeanne",
+    "Joe",
+    "Billy",
+    "Steve"
+  ];
+ 
+
+  names.sort();
+ 
+  let listEl = document.getElementById("sorted-list");
+ 
+  for (let i = 0; i < names.length; i++) {
+    const li = document.createElement("li");
+    li.textContent = names[i];
+    listEl.appendChild(li);
+  }
+ 
+ 
+  const images = [
+    {
+      thumb: "Images/79a3168cf52edca304ff32db46e0f888-3469262392.jpg?w=400",
+      full:  "Images/79a3168cf52edca304ff32db46e0f888-3469262392.jpg?w=1200",
+      alt:   "Bath Cat Pic"
+    },
+    {
+      thumb: "Images/3970590-4252012406.jpg?w=400",
+      full:  "Images/3970590-4252012406.jpg?w=1200",
+      alt:   "Shocked Cat Pic"
+    },
+    {
+      thumb: "Images/a796859fa09e8517ca464e4ba76c37eb-3214788736.jpg?w=400",
+      full:  "Images/a796859fa09e8517ca464e4ba76c37eb-3214788736.jpg?w=1200",
+      alt:   "Weird Cat Pic"
+    },
+    {
+      thumb: "Images/Funny-Cat-GIFs-3397485334.jpg?w=400",
+      full:  "Images/Funny-Cat-GIFs-3397485334.jpg?w=1200",
+      alt:   "Grumpy Cat Pic"
+    },
+    {
+      thumb: "Images/OIP-4060507167.jpg?w=400",
+      full:  "Images/OIP-4060507167.jpg?w=1200",
+      alt:   "Tube Cat Pic"
+    }
+  ];
+ 
+
+  const galleryEl = document.getElementById("gallery");
+ 
+  for (const img of images) {
+    const link = document.createElement("a");
+    link.href   = img.full;
+    link.target = "_blank";
+    link.title  = img.alt;
+ 
+    const imgEl = document.createElement("img");
+    imgEl.src   = img.thumb;
+    imgEl.alt   = img.alt;
+ 
+    link.appendChild(imgEl);
+    galleryEl.appendChild(link);
+  }
+ 
+
+  const navLinks = [
+    ["Guardians",   "https://www.mlb.com/guardians"],
+    ["Tigers",       "https://www.mlb.com/tigers"],
+    ["Twins",   "https://www.mlb.com/twins"],
+    ["Royals",        "https://www.mlb.com/royals"],
+    ["White Sox",     "https://www.mlb.com/whitesox"]
+  ];
+ 
+
+  const navEl = document.getElementById("nav-menu");
+ 
+  for (const index in navLinks) {
+    const item = navLinks[index]; 
+    const a    = document.createElement("a");
+    a.textContent = item[0];
+    a.href        = item[1];
+    navEl.appendChild(a);
+  }
+</script>
+</body>
+</html>
+ 
