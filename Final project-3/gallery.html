@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | The Art Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav>
+    <div class="container">
+      <div class="nav-logo">🎨 The Art Cart</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <main class="page-body">
+ 
+  <!-- PAGE TITLE -->
+  <div class="page-title">
+    <h1>Gallery</h1>
+    <p>Check out some of my latest work!</p>  
+  </div>
+ 
+ 
+  <!-- FILTER BUTTONS -->
+
+  <div style="text-align:center; padding: 10px 20px 0;">
+    <button class="btn btn-yellow filter-btn active" data-filter="all">All</button>
+    <button class="btn btn-yellow filter-btn" data-filter="window">Window Painting</button>
+    <button class="btn btn-yellow filter-btn" data-filter="canvas">Canvas Painting</button>
+    <button class="btn btn-yellow filter-btn" data-filter="hand">Hand-Painted Gifts</button>
+    <button class="btn btn-yellow filter-btn" data-filter="other">Other</button>
+
+  </div>
+ 
+ 
+  <!-- GALLERY GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid">
+ 
+        <!-- HOW TO ADD A PHOTO:
+             1. Put your image file in an "images" folder
+             2. Replace the placeholder <div> with:
+                <img src="images/yourfile.jpg" alt="describe the painting">
+             3. Set data-category to match one of your filter buttons above -->
+ 
+        <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/door.jpeg" alt="The Art Cart door painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+        <div class="gallery-item" data-category="canvas">
+            <img src="images/The Art Cart/fall-in-love.jpeg" alt="The Art Cart fall in love painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+        <div class="gallery-item" data-category="window">
+            <img src="images/The Art Cart/winter-dog.jpeg" alt="The Art Cart winter dog painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+        <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/owl.jpeg" alt="The Art Cart holiday painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+        <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/snowflake-skyline.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/token-full2.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+        
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/wreathclose.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="other">
+          <img src="images/The Art Cart/chalk-drawing.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+  
+         <div class="gallery-item" data-category="other">
+          <img src="images/The Art Cart/buddy.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+ 
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/snowglobe-full.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/star-art.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/charater.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="other">
+          <img src="images/The Art Cart/Jen_s drawn pets.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/The Art Cart/owl-pumpkin.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/snowflakebig.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="window">
+          <img src="images/The Art Cart/snowglobe.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="other">
+          <img src="images/The Art Cart/zephyr.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="other">
+          <img src="images/artcartpic/66718945813__C9EE2AE9-72EC-4685-9435-1E870600F0FF.jpeg"alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="other">
+          <img src="images/artcartpic/IMG_0228.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_0477.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_1708.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_2019.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_2259.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="canvas">
+          <img src="images/artcartpic/IMG_3067.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_3260.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_4808.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_5246.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_5688.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_5758.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_7936.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_8720.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+         <div class="gallery-item" data-category="hand">
+          <img src="images/artcartpic/IMG_9760.jpeg" alt="The Art Cart snowflake skyline painting" style="max-width:100%; border-radius:12px;">
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <strong style="font-family:'Fredoka One',cursive; font-size:1.4rem; color:var(--yellow);">🎨 The Art Cart</strong>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; Created for VICO 3420 &mdash; Copyright 2026, Golya</p>
+  </footer>
+ 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+ 
